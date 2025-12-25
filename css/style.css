@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.logo span {
+  color: #22c55e;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #cbd5f5;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  background: linear-gradient(to right, #38bdf8, #22c55e);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.8;
+}
+
+/* TOOLS */
+.tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tool-card {
+  background: rgba(255,255,255,0.06);
+  padding: 26px;
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(56,189,248,0.15);
+  transition: transform 0.3s;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+}
+
+.tool-card h2 {
+  margin-top: 0;
+}
+
+input {
+  width: 100%;
+  margin: 12px 0;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #38bdf8, #22c55e);
+  border: none;
+  color: #020617;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.6;
+}
