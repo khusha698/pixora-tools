@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixora Tools | Image & PDF Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Pixora<span>Tools</span></div>
+  <nav>
+    <a href="#">Tools</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Convert. Compress. Clean.</h1>
+  <p>Powerful image & PDF tools that work directly in your browser.</p>
+</section>
+
+<section class="tools">
+
+  <div class="tool-card">
+    <h2>🖼 Image to PDF</h2>
+    <p>Convert images into high-quality PDFs instantly.</p>
+    <input type="file" id="imgToPdf" accept="image/*">
+    <button onclick="imageToPDF()">Convert</button>
+  </div>
+
+  <div class="tool-card">
+    <h2>📉 Image Compressor</h2>
+    <p>Reduce image size without losing quality.</p>
+    <input type="file" id="compressImg" accept="image/*">
+    <button onclick="compressImage()">Compress</button>
+  </div>
+
+  <div class="tool-card coming">
+    <h2>📄 PDF to Image</h2>
+    <p>Extract images from PDF files.</p>
+    <button disabled>Coming Soon</button>
+  </div>
+
+  <div class="tool-card coming">
+    <h2>🧼 Image Cleaner</h2>
+    <p>AI-powered background & noise removal.</p>
+    <button disabled>AI Version Coming</button>
+  </div>
+
+</section>
+
+<section class="monetize">
+  <h2>Why Pixora?</h2>
+  <p>No uploads. No tracking. Fast & secure file processing.</p>
+</section>
+
+<footer>
+  © 2025 Pixora Tools • Built with ❤️ for creators
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
